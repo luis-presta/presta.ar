@@ -11,24 +11,16 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
 	<link rel="manifest" href="imgs/favicon/site.webmanifest">
-	<style>
-		*{
-			margin: 0;
-			box-sizing: border-box;
-			font-family: 'Roboto', sans-serif;
-		}
-		div.main{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-		}
-		h1{
-			font-size: 48px;
-		}
-	</style>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="./js/script.js" defer></script>
 </head>
-<body>
+<body class="oscuro">
+	<div id="selector">
+		<label class="switch" for="tema">
+			<input type="checkbox" name="tema" id="tema">
+			<span></span>
+		</label>
+	</div>
 	<div class="main">
 		<h1>Hola Gustavo</h1>
 	</div>

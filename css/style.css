@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	transition: ease all .2s;
+}
+body{
+	background-color: #FFFFFF;
+	color: #000000;
+}
+body.oscuro{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+div.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+h1{
+	font-size: 48px;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 24px;
+	transform-origin:0 0;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.switch span {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .4s;
+	border: solid 4px #ccc;
+	width: auto;
+}
+
+.switch span::before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 50%;
+	left: 0;
+	bottom: 0;
+	background-color: white;
+	transition: .4s;
+}
+
+.switch input:checked + span {
+	background-color: #666;
+	border: solid 4px #666;
+}
+.switch input:focus + .span {
+	box-shadow: 0 0 1px #666;
+}
+.switch input:checked + span::before {
+	transform: translateX(100%);
+}
+#selector{
+	position: fixed;
+	right: 1vw;
+	top: 1vh;
+}
