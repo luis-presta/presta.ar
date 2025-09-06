@@ -148,3 +148,19 @@ h3{
 	font-size: 25px;
 	font-style: italic;
 }
+@media (max-width: 600px) {
+	h1.principal{
+		font-size: 18px;
+		margin-top: 0;
+	}
+	h1{
+		font-size: 30px;
+	}
+	div.principal>div>h2{
+		margin-bottom: 2vh;
+		font-size: 16px;
+	}
+	#header{
+		display: none;
+	}
+}
